@@ -157,6 +157,38 @@
           </div>
         </div>
       </div>
+      <section id="my-laptop">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h2>My Lapotps</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="laptop-box">
+                <h4 class="laptop-name">SAMSUNG</h4>
+                <img src="img/keyboard/laptop (1).png" alt="ASUS" class="laptop-img" />
+                <a href="#" class="btn btn-light laptop-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="laptop-box">
+                <h4 class="laptop-name">MacBook</h4>
+                <img src="img/keyboard/laptop (2).png" alt="MacBook" class="laptop-img" />
+                <a href="#" class="btn btn-light laptop-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="laptop-box">
+                <h4 class="laptop-name">ASUS</h4>
+                <img src="img/keyboard/laptop (3).png" alt="ASUS" class="laptop-img" />
+                <a href="#" class="btn btn-light laptop-detail-button">Show Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#fff"
@@ -352,6 +384,14 @@
             console.log('Success!', response);
           })
           .catch((error) => console.error('Error!', error.message));
+      });
+    </script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll('.laptop-box'), {
+        max: 30,
+        speed: 400,
+        glare: true,
       });
     </script>
   </body>
